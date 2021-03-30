@@ -3,22 +3,26 @@ import styles from '../styles/Home.module.css'
 
 export const Header = () => {
   return (
-    <div>
-      <Link href="/">
-       <a>Portfolio</a>
-      </Link>
-			<Link href="/career">
-				<a>Career</a>
-			</Link>
-			<Link href="/skill">
-				<a>Skill</a>
-			</Link>
-			<Link href="/works">
-				<a>Works</a>
-			</Link>
-			<Link href="/contact">
-				<a>Contact</a>
-			</Link>
-		</div>
+		<header className={styles.header}>
+			<div>
+				<Link href="/">
+					<a className={styles.headerPortfolio}>Portfolio</a>
+				</Link>
+			</div>
+			<div>
+				<Link href="/career">
+					<a className={styles.headerLink}>Career</a>
+				</Link>
+				<Link href="/skill">
+					<a className={styles.headerLink}>Skill</a>
+				</Link>
+				<Link href="/works">
+					<a className={styles.headerLink}>Works</a>
+				</Link>
+				<Link href="/contact">
+					<a className={styles.headerLink}>Contact</a>
+				</Link>
+			</div>
+		</header>
 	);
 }
