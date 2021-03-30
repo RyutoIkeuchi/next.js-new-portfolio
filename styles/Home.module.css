@@ -5,15 +5,59 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:#fff;
+  background-image:radial-gradient(#EFECE0, #fff);
 }
 
 .main {
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.mainView {
+  height:100vh;
+}
+
+.title {
+  font-size: 80px;
+  line-height: 70vh;
+  color: #fff;
+  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 5px 5px #7CE0FE;
+  transform: rotate(-4deg);
+}
+
+.titleBack {
+  background: url(../public/images/Team\ work_Flatline.png) no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.profileName {
+  font-size: 32px;
+}
+
+.profileJob {
+  margin-bottom: 20px;
+}
+
+.profileText {
+  text-align-last: left;
 }
 
 .footer {
@@ -35,7 +79,7 @@
   align-items: center;
 }
 
-.title a {
+/* .title a {
   color: #0070f3;
   text-decoration: none;
 }
@@ -55,7 +99,7 @@
 .title,
 .description {
   text-align: center;
-}
+} */
 
 .description {
   line-height: 1.5;
