@@ -1,90 +1,149 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  line-height: 2rem;
-  padding-top: 32px;
-  color: #222;
-  text-shadow:1px 0 0 #67E1FC,0 1px 0 #67E1FC,-1px 0 0 #67E1FC,0 -1px 0 #67E1FC;
+	display: flex;
+	justify-content: space-between;
+	line-height: 2rem;
+	padding-top: 32px;
+	color: #222;
+	text-shadow: 1px 0 0 #67e1fc, 0 1px 0 #67e1fc, -1px 0 0 #67e1fc,
+		0 -1px 0 #67e1fc;
 }
 
 .headerPortfolio {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .headerLink {
-  font-size: 24px;
-  margin-left: 40px;
+	font-size: 24px;
+	margin-left: 40px;
 }
 
 .container {
-  padding: 0 250px;
-  background-color:#fff;
-  background-image:radial-gradient(#EFECE0, #fff);
+	padding: 0 250px;
+	background-color: #fff;
+	background-image: radial-gradient(#efece0, #fff);
+	z-index: -99;
 }
 
 .main {
-  position: relative;
+	position: relative;
 }
 
 .mainView {
-  height:100vh;
+	height: 100vh;
 }
 
 .title {
-  font-size: 80px;
-  line-height: 60vh;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 5px 5px #7CE0FE;
-  transform: rotate(-4deg);
+	font-size: 80px;
+	line-height: 60vh;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
+		-1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
+		-1px -1px 1px #555, 5px 5px #7ce0fe;
+	transform: rotate(-4deg);
 }
 
 .titleBack {
-  background: url(../public/images/Team\ work_Flatline.png) no-repeat;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 500px;
-  height: 500px;
+	background: url(../public/images/homepage.png) no-repeat;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 500px;
+	height: 500px;
 }
 
 .profile {
+	text-align: center;
+	margin: 100px 0px 200px;
+  color: #7ce0fe;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.profileTitle {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.profileContent {
   display: flex;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 200px;
+	align-items: center;
+	justify-content: center;
+}
+
+.profileContainer {
+  position: relative;
+  z-index: 99;
+  margin-right: 50px;
 }
 
 .profileName {
-  font-size: 32px;
+	font-size: 32px;
 }
 
 .profileJob {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .profileText {
-  text-align-last: left;
+	text-align-last: left;
+	position: relative;
+}
+
+.profileContainer::after {
+	content: '';
+	background: url(../public/images/田舎の背景.jpg) no-repeat;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  /* filter: grayscale(10); */
+  filter: blur(2px);
+	background-blend-mode: lighten;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	transform: rotate(20deg);
+	width: 300px;
+	height: 200px;
+	z-index: -99;
+}
+
+.profileContainer::before {
+	content: '';
+	background: url(../public/images/球場の風景.jpg) no-repeat;
+	/* background-color: rgba(255, 255, 255, 0.4); */
+  /* filter: grayscale(60); */
+  filter: blur(3px);
+	background-blend-mode: lighten;
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	transform: rotate(-10deg);
+	width: 300px;
+	height: 200px;
+	z-index: -99;
+}
+
+.profile img {
+  border: 10px solid #222;
 }
 
 .footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 100px;
+	border-top: 1px solid #eaeaea;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer img {
-  margin-left: 0.5rem;
+	margin-left: 0.5rem;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* .title a {
@@ -110,65 +169,65 @@
 } */
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+	line-height: 1.5;
+	font-size: 1.5rem;
 }
 
 .code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+	background: #fafafa;
+	border-radius: 5px;
+	padding: 0.75rem;
+	font-size: 1.1rem;
+	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin-top: 3rem;
 }
 
 .card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+	margin: 1rem;
+	flex-basis: 45%;
+	padding: 1.5rem;
+	text-align: left;
+	color: inherit;
+	text-decoration: none;
+	border: 1px solid #eaeaea;
+	border-radius: 10px;
+	transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+	color: #0070f3;
+	border-color: #0070f3;
 }
 
 .card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+	margin: 0 0 1rem 0;
+	font-size: 1.5rem;
 }
 
 .card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+	margin: 0;
+	font-size: 1.25rem;
+	line-height: 1.5;
 }
 
 .logo {
-  height: 1em;
+	height: 1em;
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
 }
