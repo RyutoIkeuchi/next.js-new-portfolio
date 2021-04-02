@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { Header } from '../components/Header'
-import Image from 'next/image'
+import { Header } from '../components/Header';
+import Image from 'next/image';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -50,7 +51,7 @@ export default function Home() {
 				</section>
 			</main>
 
-			<footer className={styles.footer}>©️ 2021 ryutoikeuchi</footer>
+			<Footer />
 		</div>
 	);
 }

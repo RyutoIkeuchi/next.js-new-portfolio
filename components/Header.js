@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 
 export const Header = () => {
-  return (
+	return (
 		<header className={styles.header}>
 			<div>
 				<Link href="/">
@@ -25,4 +25,4 @@ export const Header = () => {
 			</div>
 		</header>
 	);
-}
+};

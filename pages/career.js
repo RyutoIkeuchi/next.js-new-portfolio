@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
-import { Header } from '../components/Header'
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 
 export default function Career() {
 	return (
@@ -80,6 +81,7 @@ export default function Career() {
 					</div>
 				</section>
 			</main>
+			<Footer/>
 		</div>
 	);
-};
+}

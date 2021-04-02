@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
-import { Header } from '../components/Header'
+import { Header } from '../components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { Footer } from '../components/Footer';
 
 export default function Skill() {
 	return (
@@ -101,6 +101,7 @@ export default function Skill() {
 					</article>
 				</section>
 			</main>
+			<Footer />
 		</div>
 	);
 }
