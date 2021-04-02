@@ -26,7 +26,7 @@
 
 .main {
 	position: relative;
-  margin-top: 100px;
+	margin-top: 100px;
 }
 
 .mainView {
@@ -57,31 +57,39 @@
 .profile {
 	text-align: center;
 	margin: 100px 0px 200px;
-  color: #7ce0fe;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
+	color: #7ce0fe;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
 }
 
 .sectionTitle {
-  font-size: 48px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.sectionTitle h2 {
+	font-size: 72px;
+	margin-bottom: 30px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
 		-1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
 		-1px -1px 1px #555, 5px 5px #7ce0fe;
 }
 
+.sectionTitle p {
+	font-size: 24px;
+}
+
 .profileContent {
-  display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .profileContainer {
-  position: relative;
-  z-index: 99;
-  margin-right: 50px;
+	position: relative;
+	z-index: 99;
+	margin-right: 50px;
 }
 
 .profileName {
@@ -99,10 +107,10 @@
 
 .profileContainer::after {
 	content: '';
-	background: url(../public/images/田舎の背景.jpg) no-repeat;
-  /* background-color: rgba(255, 255, 255, 0.4); */
-  /* filter: grayscale(10); */
-  filter: blur(2px);
+	background: url(../public/images/okutown.jpg) no-repeat;
+	/* background-color: rgba(255, 255, 255, 0.4); */
+	/* filter: grayscale(10); */
+	filter: blur(2px);
 	background-blend-mode: lighten;
 	position: absolute;
 	top: -30px;
@@ -115,10 +123,10 @@
 
 .profileContainer::before {
 	content: '';
-	background: url(../public/images/球場の風景.jpg) no-repeat;
+	background: url(../public/images/stadium.jpg) no-repeat;
 	/* background-color: rgba(255, 255, 255, 0.4); */
-  /* filter: grayscale(60); */
-  filter: blur(3px);
+	/* filter: grayscale(60); */
+	filter: blur(3px);
 	background-blend-mode: lighten;
 	position: absolute;
 	bottom: -30px;
@@ -127,10 +135,6 @@
 	width: 300px;
 	height: 200px;
 	z-index: -99;
-}
-
-.profile img {
-  border: 10px solid #222;
 }
 
 .footer {
@@ -152,88 +156,79 @@
 	align-items: center;
 }
 
-/* .title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-} */
-
-.description {
-	line-height: 1.5;
-	font-size: 1.5rem;
-}
-
-.code {
-	background: #fafafa;
-	border-radius: 5px;
-	padding: 0.75rem;
-	font-size: 1.1rem;
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 800px;
-	margin-top: 3rem;
-}
-
-.card {
-	margin: 1rem;
-	flex-basis: 45%;
-	padding: 1.5rem;
-	text-align: left;
-	color: inherit;
-	text-decoration: none;
-	border: 1px solid #eaeaea;
-	border-radius: 10px;
-	transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-	color: #0070f3;
-	border-color: #0070f3;
-}
-
-.card h3 {
-	margin: 0 0 1rem 0;
-	font-size: 1.5rem;
-}
-
-.card p {
-	margin: 0;
-	font-size: 1.25rem;
-	line-height: 1.5;
-}
-
 .logo {
 	height: 1em;
 }
 
-@media (max-width: 600px) {
-	.grid {
-		width: 100%;
-		flex-direction: column;
-	}
+.careerContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.careerBorder {
+	border-left: 10px solid #222;
+	height: 1500px;
+	margin-left: 30px;
+}
+
+.careerContent {
+	text-align-last: left;
+}
+
+.careerWrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 200px;
+}
+
+.careerName h4 {
+	font-size: 24px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.careerName h4::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -85px;
+	display: inline-block;
+	width: 50px;
+	height: 5px;
+	background-color: #222;
+}
+
+.careerImage {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-left: 165px;
+}
+
+.careerName p {
+	font-weight: bold;
+	color: #7ce0fe;
+	background: #fff;
+	border: solid 3px #7ce0fe;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.careerImage1 {
+	background: url(../public/images/momotarou.jpg);
+	background-position: center;
+}
+
+.careerImage2 {
+	background: url(../public/images/schoolpic.jpg);
+	background-position: center;
+}
+.careerImage3 {
+	background: url(../public/images/factory.jpg);
+	background-position: center;
+}
+.careerImage4 {
+	background: url(../public/images/computer.jpg);
+	background-position: center;
 }

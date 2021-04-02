@@ -19,7 +19,9 @@ export default function Home() {
 					<h1 className={styles.title}>Port Folio Site</h1>
 				</div>
 				<section className={styles.profile}>
-					<h2 className={styles.sectionTitle}>Profile</h2>
+					<div className={styles.sectionTitle}>
+						<h2>Profile</h2>
+					</div>
 					<article className={styles.profileContent}>
 						<div className={styles.profileContainer}>
 							<h3 className={styles.profileName}>池内隆人</h3>
