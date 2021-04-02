@@ -8,7 +8,7 @@ export default function Career() {
 			<main className={styles.main}>
 				<div className={styles.sectionTitle}>
 					<h2>Career</h2>
-					<p>岡山 ~ 広島 ~ 東京？？</p>
+					<p>岡山(1999~2018) ~ 広島(2018~2021) ~ 東京(2021~)？？</p>
 				</div>
 				<section className={styles.careerContainer}>
 					<div className={styles.careerBorder}></div>
