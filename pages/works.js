@@ -6,7 +6,9 @@ export default function Works() {
 		<div className={styles.container}>
 			<Header />
 			<main className={styles.main}>
-				<div>Works</div>
+				<div className={styles.sectionTitle}>
+					<h2>Works</h2>
+				</div>
 			</main>
 		</div>
 	);

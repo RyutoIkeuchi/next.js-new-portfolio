@@ -6,7 +6,9 @@ export default function Career() {
     <div className={styles.container}>
       <Header/>
 			<main className={styles.main}>
-				<div>Career</div>
+				<div className={styles.sectionTitle}>
+				  <h2>Career</h2>
+				</div>
 			</main>
 		</div>
 	);

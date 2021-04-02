@@ -26,6 +26,7 @@
 
 .main {
 	position: relative;
+  margin-top: 100px;
 }
 
 .mainView {
@@ -34,7 +35,7 @@
 
 .title {
 	font-size: 80px;
-	line-height: 60vh;
+	line-height: 35vh;
 	text-align: center;
 	color: #fff;
 	text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
@@ -46,7 +47,7 @@
 .titleBack {
 	background: url(../public/images/homepage.png) no-repeat;
 	position: absolute;
-	top: 20%;
+	top: 10%;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 500px;
@@ -61,9 +62,14 @@
   text-shadow: 1px 1px 1px #222;
 }
 
-.profileTitle {
+.sectionTitle {
   font-size: 48px;
   margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
+		-1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
+		-1px -1px 1px #555, 5px 5px #7ce0fe;
 }
 
 .profileContent {

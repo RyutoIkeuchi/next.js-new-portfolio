@@ -6,7 +6,9 @@ export default function Contact() {
 		<div className={styles.container}>
 			<Header />
 			<main className={styles.main}>
-				<div>Contact</div>
+				<div className={styles.sectionTitle}>
+					<h2>Contact</h2>
+				</div>
 			</main>
 		</div>
 	);

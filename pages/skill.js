@@ -6,7 +6,9 @@ export default function Skill() {
 		<div className={styles.container}>
 			<Header />
 			<main className={styles.main}>
-				<div>Skill</div>
+				<div className={styles.sectionTitle}>
+					<h2>Skill</h2>
+				</div>
 			</main>
 		</div>
 	);
