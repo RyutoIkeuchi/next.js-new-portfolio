@@ -261,8 +261,10 @@
 .worksWrapper {
 	width: 260px;
 	height: 160px;
-	background-color: rgba(85, 85, 85,0.6);
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+	background-color: rgba(85, 85, 85, 0.6);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+		rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+		rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .worksWrapper a {
@@ -273,4 +275,33 @@
 	text-align: center;
 	margin-top: 50px;
 	color: #fff;
+}
+
+.contactPage {
+	text-align: center;
+}
+
+.contactfontIcon {
+	font-size: 64px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.contactUrl {
+	text-align: left;
+	margin-bottom: 60px;
+	margin-left: 250px;
+}
+
+.contactUrl p {
+	margin-bottom: 16px;
+}
+
+.contactUrl a {
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+.contactUrl a:hover {
+	color: #ff0000;
 }

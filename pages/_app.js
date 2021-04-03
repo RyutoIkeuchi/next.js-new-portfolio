@@ -9,8 +9,11 @@ import {
 	faJsSquare,
 	faPython,
 	faLinux,
+	faInstagramSquare,
+	faTwitterSquare,
+	faGithubSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import { faPencilRuler } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare, faPencilRuler } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
 	faHtml5,
@@ -20,7 +23,11 @@ library.add(
 	faJsSquare,
 	faPython,
 	faLinux,
-	faPencilRuler
+	faPencilRuler,
+	faInstagramSquare,
+	faTwitterSquare,
+	faGithubSquare,
+	faEnvelopeSquare
 );
 
 function MyApp({ Component, pageProps }) {
