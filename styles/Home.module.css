@@ -253,8 +253,8 @@
 }
 
 .fontIcon {
-	font-size: 104px;
-	margin-bottom: 20px;
+	width: 100px;
+	height: 100px;
 	margin-top: 30px;
 }
 
@@ -282,7 +282,8 @@
 }
 
 .contactfontIcon {
-	font-size: 64px;
+	width: 64px;
+	height: 64px;
 	margin-right: 50px;
 	margin-bottom: 50px;
 }
