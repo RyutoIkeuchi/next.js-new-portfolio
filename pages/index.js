@@ -22,6 +22,12 @@ export default function Home() {
 				<section className={styles.profile}>
 					<div className={styles.sectionTitle}>
 						<h2>Profile</h2>
+						<p>
+							現在21歳でWebエンジニアを目指し転職活動中です。
+							<br /> Web制作もWeb開発もフロントエンドを主にしておりますが、
+							<br />
+							サーバーサイド・インフラと幅広くこなせるエンジニアになります。
+						</p>
 					</div>
 					<article className={styles.profileContent}>
 						<div className={styles.profileContainer}>
@@ -29,24 +35,19 @@ export default function Home() {
 							<p className={styles.profileJob}>~ Web Engineer ~</p>
 							<div className={styles.profileText}>
 								<p>趣味：お酒、古着、野球観戦、ドライブ</p>
-								<p>
-									<br />
-									現在広島県に在住の21歳です。
-									<br />
-									小さい頃からものづくりが好きで
-									<br />
-									自分のつくったサービスを通してたくさんの人を
-									<br />
-									幸せにしたいと思いエンジニアを目指しています。
-								</p>
+								<p>現在：広島県に在住の21歳</p>
+								<p>好きな言語：Javascript</p>
+								<p>直近の目標：オープンカーを買う</p>
 							</div>
 						</div>
-						<Image
-							src="/images/ryuto.png"
-							alt="Picture of the author"
-							width={240}
-							height={240}
-						/>
+						<div className={styles.profileImage}>
+							<Image
+								src="/images/ryuto.png"
+								alt="Picture of the author"
+								width={240}
+								height={240}
+							/>
+						</div>
 					</article>
 				</section>
 			</main>

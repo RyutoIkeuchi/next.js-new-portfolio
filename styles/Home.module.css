@@ -57,9 +57,6 @@
 .profile {
 	text-align: center;
 	margin: 100px 0px 200px;
-	color: #7ce0fe;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
 }
 
 .sectionTitle {
@@ -76,20 +73,24 @@
 		-1px -1px 1px #555, 5px 5px #7ce0fe;
 }
 
-.sectionTitle p {
-	font-size: 16px;
-}
-
 .profileContent {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+}
+
+.profileImage {
+	padding-left: 75px;
 }
 
 .profileContainer {
 	position: relative;
-	z-index: 99;
-	margin-right: 50px;
+	padding-right: 75px;
+	border-right: 1px solid #222;
+	color: #222;
+	text-shadow:5px 5px 10px #7ce0fe;
+	z-index: 1;
 }
 
 .profileName {
@@ -102,39 +103,10 @@
 
 .profileText {
 	text-align-last: left;
-	position: relative;
 }
 
-.profileContainer::after {
-	content: '';
-	background: url(../public/images/okutown.jpg) no-repeat;
-	/* background-color: rgba(255, 255, 255, 0.4); */
-	/* filter: grayscale(10); */
-	filter: blur(2px);
-	background-blend-mode: lighten;
-	position: absolute;
-	top: -30px;
-	left: 0;
-	transform: rotate(20deg);
-	width: 300px;
-	height: 200px;
-	z-index: -99;
-}
-
-.profileContainer::before {
-	content: '';
-	background: url(../public/images/stadium.jpg) no-repeat;
-	/* background-color: rgba(255, 255, 255, 0.4); */
-	/* filter: grayscale(60); */
-	filter: blur(3px);
-	background-blend-mode: lighten;
-	position: absolute;
-	bottom: -30px;
-	left: 0;
-	transform: rotate(-10deg);
-	width: 300px;
-	height: 200px;
-	z-index: -99;
+.profileText p {
+	margin-bottom: 20px;
 }
 
 .footer {
