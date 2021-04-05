@@ -3,7 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head'
-import { SectionTitle } from '../components/sectionTitle';
+import { SectionTitle } from '../components/SectionTitle';
 
 export default function Contact() {
 	return (
