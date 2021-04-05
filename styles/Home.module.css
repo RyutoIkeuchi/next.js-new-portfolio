@@ -80,10 +80,6 @@
 	position: relative;
 }
 
-.profileImage {
-	padding-left: 75px;
-}
-
 .profileContainer {
 	position: relative;
 	padding-right: 75px;
@@ -171,11 +167,12 @@
 	background-color: #222;
 }
 
-.careerImage {
-	width: 200px;
-	height: 200px;
+.image {
+	margin-left: 75px;
+}
+
+.imageBorder {
 	border-radius: 50%;
-	margin-left: 165px;
 }
 
 .careerName p {
@@ -185,24 +182,6 @@
 	border: solid 3px #7ce0fe;
 	border-radius: 10px;
 	padding: 10px;
-}
-
-.careerImage1 {
-	background: url(../public/images/momotarou.jpg);
-	background-position: center;
-}
-
-.careerImage2 {
-	background: url(../public/images/schoolpic.jpg);
-	background-position: center;
-}
-.careerImage3 {
-	background: url(../public/images/factory.jpg);
-	background-position: center;
-}
-.careerImage4 {
-	background: url(../public/images/computer.jpg);
-	background-position: center;
 }
 
 .skillGrid {

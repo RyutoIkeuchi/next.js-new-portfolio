@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Header } from '../components/Header';
-import Image from 'next/image';
 import { Footer } from '../components/Footer';
 import { SectionTitle } from '../components/SectionTitle';
+import { Images } from '../components/Images';
 
 export default function Home() {
 	return (
@@ -38,14 +38,10 @@ export default function Home() {
 								<p>直近の目標：オープンカーを買う</p>
 							</div>
 						</div>
-						<div className={styles.profileImage}>
-							<Image
-								src="/images/ryuto.png"
-								alt="Picture of the author"
-								width={240}
-								height={240}
-							/>
-						</div>
+						<Images
+							url="/images/ryuto.png"
+							alt='alt="Picture of the author"'
+						/>
 					</article>
 				</section>
 			</main>
