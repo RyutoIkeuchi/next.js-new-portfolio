@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Head from 'next/head';
+import { SectionTitle } from '../components/sectionTitle';
 
 export default function Career() {
 	return (
@@ -12,10 +13,12 @@ export default function Career() {
 			</Head>
 			<Header />
 			<main className={styles.main}>
-				<div className={styles.sectionTitle}>
-					<h2>Career</h2>
-					<p>岡山(1999~2018) ~ 広島(2018~2021) ~ 東京(2021~)？？</p>
-				</div>
+				<SectionTitle
+					title="Career"
+					text="岡山(1999~2018) ~ 広島(2018~2021) ~ 東京(2021~)？？"
+					text2=""
+					text3=""
+				/>
 				<section className={styles.careerContainer}>
 					<div className={styles.careerBorder}></div>
 					<div className={styles.careerContent}>

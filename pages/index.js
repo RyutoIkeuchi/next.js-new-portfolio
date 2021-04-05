@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import { Header } from '../components/Header';
 import Image from 'next/image';
 import { Footer } from '../components/Footer';
+import { SectionTitle } from '../components/SectionTitle';
 
 export default function Home() {
 	return (
@@ -20,15 +21,12 @@ export default function Home() {
 					<h1 className={styles.title}>Port Folio Site</h1>
 				</div>
 				<section className={styles.profile}>
-					<div className={styles.sectionTitle}>
-						<h2>Profile</h2>
-						<p>
-							現在21歳でWebエンジニアを目指し転職活動中です。
-							<br /> Web制作もWeb開発もフロントエンドを主にしておりますが、
-							<br />
-							サーバーサイド・インフラと幅広くこなせるエンジニアになります。
-						</p>
-					</div>
+					<SectionTitle
+						title="Profile"
+						text="現在21歳でWebエンジニアを目指し転職活動中です。"
+						text2="Web制作もWeb開発もフロントエンドを主にしておりますが、"
+						text3="サーバーサイド・インフラと幅広くこなせるエンジニアになります。"
+					/>
 					<article className={styles.profileContent}>
 						<div className={styles.profileContainer}>
 							<h3 className={styles.profileName}>池内隆人</h3>

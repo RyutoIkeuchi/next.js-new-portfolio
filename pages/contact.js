@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head'
+import { SectionTitle } from '../components/sectionTitle';
 
 export default function Contact() {
 	return (
@@ -13,16 +14,12 @@ export default function Contact() {
 			</Head>
 			<Header />
 			<main className={styles.main}>
-				<div className={styles.sectionTitle}>
-					<h2>Contact</h2>
-					<p>
-						閲覧いただきありがとうございます！
-						<br />
-						SNSも積極的に行っておりますのでぜひフォローお待ちしております。
-						<br />
-						連絡がございましたらメールもしくはSNSのDMよりお願いします。
-					</p>
-				</div>
+				<SectionTitle
+					title="Contact"
+					text="閲覧いただきありがとうございます！"
+					text2="SNSも積極的に行っておりますので是非フォローお待ちしております"
+					text3="連絡がございましたら、メールもしくはSNSのDMよりお願いします。"
+				/>
 				<section className={styles.contactPage}>
 					<div className={styles.contactSns}>
 						<a

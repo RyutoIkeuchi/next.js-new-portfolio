@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Footer } from '../components/Footer';
 import Head from 'next/head'
+import { SectionTitle } from '../components/sectionTitle';
 
 export default function Skill() {
 	return (
@@ -14,16 +15,12 @@ export default function Skill() {
 
 			<Header />
 			<main className={styles.main}>
-				<div className={styles.sectionTitle}>
-					<h2>Skill</h2>
-					<p>
-						主にフロントエンドを中心に学習し、Web制作・Web開発の両方を経験してきました。
-						<br />
-						フロントはjavascriptをメインにReact(Next.js),VueでサーバーサイドはPython(Django),
-						<br />
-						他にもGitやLinux,Adobe,ネットワークといったプログラミング以外の学習も積極的にしています
-					</p>
-				</div>
+				<SectionTitle
+					title="Skill"
+					text="主にフロントエンドを中心に学習し、Web制作・Web開発の両方を経験してきました。"
+					text2="フロントはJavasctiptをメインにReact(Next.js)を扱い、サーバーサイドはPython(Django)を仕様"
+					text3="他にもGitやLinux,Adobe,ネットワークといったプログラミング以外の学習も積極的にしています。"
+				/>
 				<section className={styles.skillGrid}>
 					<article className={styles.skillLanguage}>
 						<div>

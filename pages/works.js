@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Head from 'next/head'
+import { SectionTitle } from '../components/sectionTitle';
 
 export default function Works() {
 	return (
@@ -13,16 +14,12 @@ export default function Works() {
 
 			<Header />
 			<main className={styles.main}>
-				<div className={styles.sectionTitle}>
-					<h2>Works</h2>
-					<p>
-						クラウドソーシングを活用してこれまでに４つの案件を担当してきました。
-						<br />
-						その他にもReactを中心にアプリ開発をしています。
-						<br />
-						サーバーサイド言語を用いたアプリを作るのが現在の目標です。
-					</p>
-				</div>
+				<SectionTitle
+					title="Works"
+					text="クラウドソーシングを活用してこれまで4つの案件をこなしてきました。"
+					text2="その他にもReactを中心にアプリ開発をしています"
+					text3="現在の目標はサーバーサイド言語を用いてアプリをつくることです。"
+				/>
 				<section className={styles.skillGrid}>
 					<article className={styles.worksWrapper}>
 						<a href="https://ryutoikeuchi.github.io/isara-/" target="_blank">
