@@ -17,8 +17,6 @@ export default function Career() {
 				<SectionTitle
 					title="Career"
 					text="岡山(1999~2018) ~ 広島(2018~2021) ~ 東京(2021~)？？"
-					text2=""
-					text3=""
 				/>
 				<section className={styles.careerContainer}>
 					<div className={styles.careerBorder}></div>
