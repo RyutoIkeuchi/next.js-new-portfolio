@@ -4,7 +4,7 @@ import { Languages } from './Languages';
 
 export const SkillGrid = () => {
 	return (
-		<section className={styles.skillGrid}>
+		<section className={styles.gridStyle}>
 			{Languages.map((language) => (
 				<SkillLanguage
 					key={language.icon}

@@ -188,7 +188,7 @@
 	padding: 10px;
 }
 
-.skillGrid {
+.gridStyle {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr) auto;
 	column-gap: auto;
