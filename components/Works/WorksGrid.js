@@ -7,6 +7,7 @@ export const WorksGrid = () => {
 		<section className={styles.gridStyle}>
 			{WorksPeace.map((peace) => (
 				<WorksWrapper
+					key={peace.id}
 					url={peace.url}
 					language={peace.language}
 					title={peace.title}
