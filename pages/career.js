@@ -3,7 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from '../components/SectionTitle';
-import { CareerContent } from '../components/Career/CareerContent';
+import { CareerContainer } from '../components/Career/CareerContainer';
 
 export default function Career() {
 	return (
@@ -20,10 +20,7 @@ export default function Career() {
 					text2="将来の夢は多くの人に影響を与えるサービスをつくること"
 					text3="好きな漫画はキングダム・デスノート・テラフォーマーズ"
 				/>
-				<section className={styles.careerContainer}>
-					<div className={styles.careerBorder}></div>
-					<CareerContent />
-				</section>
+				<CareerContainer/>
 			</main>
 			<Footer />
 		</div>

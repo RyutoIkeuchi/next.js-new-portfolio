@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css'
+import styles from './Career.module.css'
 import { Images } from '../Images';
 import { CareerName } from './CareerName';
 

@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css';
+import styles from './Career.module.css';
 import { CareerWrapper } from './CareerWrapper';
 
 export const CareerContent = () => {
