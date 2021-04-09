@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css';
+import styles from './Skill.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SkillLanguage = (props) => {

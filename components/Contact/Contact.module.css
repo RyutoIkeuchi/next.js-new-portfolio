@@ -1,0 +1,30 @@
+.contactPage {
+	text-align: center;
+}
+
+.contactfontIcon {
+	width: 64px;
+	height: 64px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+
+.contactUrl {
+	text-align: left;
+	margin-bottom: 60px;
+	margin-left: 250px;
+}
+
+.contactUrl p {
+	margin-bottom: 16px;
+}
+
+.contactUrl a {
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+.contactUrl a:hover {
+	color: #ff0000;
+}

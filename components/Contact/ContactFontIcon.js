@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css'
+import styles from './Contact.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
