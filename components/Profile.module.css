@@ -1,0 +1,30 @@
+.profileContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.profileContainer {
+	position: relative;
+	padding-right: 75px;
+	border-right: 1px solid #222;
+	color: #222;
+	text-shadow: 5px 5px 10px #7ce0fe;
+	z-index: 1;
+}
+.profileName {
+	font-size: 32px;
+}
+
+.profileJob {
+	margin-bottom: 20px;
+}
+
+.profileText {
+	text-align-last: left;
+}
+
+.profileText p {
+	margin-bottom: 20px;
+}

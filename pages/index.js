@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { SectionTitle } from '../components/SectionTitle';
-import { Images } from '../components/Images';
+import { Profile } from '../components/Profile';
 
 export default function Home() {
 	return (
@@ -27,22 +27,7 @@ export default function Home() {
 						text2="Web制作もWeb開発もフロントエンドを主にしておりますが、"
 						text3="サーバーサイド・インフラと幅広くこなせるエンジニアになります。"
 					/>
-					<article className={styles.profileContent}>
-						<div className={styles.profileContainer}>
-							<h3 className={styles.profileName}>池内隆人</h3>
-							<p className={styles.profileJob}>~ Web Engineer ~</p>
-							<div className={styles.profileText}>
-								<p>趣味：お酒、古着、野球観戦、ドライブ</p>
-								<p>現在：広島県に在住の21歳</p>
-								<p>好きな言語：Javascript</p>
-								<p>直近の目標：オープンカーを買う</p>
-							</div>
-						</div>
-						<Images
-							url="/images/ryuto.png"
-							alt='alt="Picture of the author"'
-						/>
-					</article>
+				<Profile/>
 				</section>
 			</main>
 
