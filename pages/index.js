@@ -16,9 +16,16 @@ export default function Home() {
 			<Header />
 
 			<main className={styles.main}>
-				<div className={styles.titleBack}></div>
 				<div className={styles.mainView}>
+					<div className={styles.titleWidth}>
 					<h1 className={styles.title}>Port Folio Site</h1>
+					</div>
+					<div className={styles.titleBack}>
+						<div className={styles.woman}></div>
+						<div className={styles.man2}></div>
+						<div className={styles.man1}></div>
+						<div className={styles.car}></div>
+					</div>
 				</div>
 				<section className={styles.profile}>
 					<SectionTitle
@@ -27,7 +34,7 @@ export default function Home() {
 						text2="Web制作もWeb開発もフロントエンドを主にしておりますが、"
 						text3="サーバーサイド・インフラと幅広くこなせるエンジニアになります。"
 					/>
-				<Profile/>
+					<Profile />
 				</section>
 			</main>
 

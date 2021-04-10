@@ -30,28 +30,73 @@
 }
 
 .mainView {
-	height: 100vh;
+	height: 60vh;
+	position: relative;
+}
+
+.titleWidth {
+	width: 70%;
+	margin: 250px auto 0px;
 }
 
 .title {
-	font-size: 80px;
-	line-height: 35vh;
+	font-size: 88px;
 	text-align: center;
 	color: #fff;
 	text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
 		-1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
 		-1px -1px 1px #555, 5px 5px #7ce0fe;
 	transform: rotate(-4deg);
+	border-radius: 20px;
+	border-left: 3px solid #A89259;
+	box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
+	background: #67e1fc;
+	text-shadow: 0px 3px 0px #aaa, 0px 14px 10px rgba(0, 0, 0, 0.2),
+		0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.05);
 }
 
-.titleBack {
-	background: url(../public/images/homepage.png) no-repeat;
+.woman {
+	background: url(../public/images/woman.png) no-repeat;
+	background-size: contain;
 	position: absolute;
-	top: 10%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 500px;
-	height: 500px;
+	top:60px;
+	right: -60px;
+	width: 200px;
+	height: 200px;
+}
+
+.man2 {
+	background: url(../public/images/man2.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: -125px;
+	left: 200px;
+	width: 200px;
+	height: 200px;
+	transform: rotate(-4deg);
+}
+
+.man1 {
+	background: url(../public/images/man1.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0px;
+	left: -55px;
+	width: 200px;
+	height: 200px;
+}
+
+
+
+.car {
+	background: url(../public/images/car.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: -150px;
+	right: 200px;
+	width: 200px;
+	height: 200px;
+	transform: rotate(-4deg);
 }
 
 .profile {
@@ -96,11 +141,6 @@
 	height: 1em;
 }
 
-
-
-
-
-
 .image {
 	margin-left: 75px;
 }
@@ -108,7 +148,6 @@
 .imageBorder {
 	border-radius: 50%;
 }
-
 
 .gridStyle {
 	display: grid;
