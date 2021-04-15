@@ -5,6 +5,8 @@ import Head from 'next/head';
 import { SectionTitle } from '../components/SectionTitle';
 import { SkillLanguage } from '../components/Skill/SkilLanguage';
 import { Languages } from '../components/Skill/Languages';
+import { SkillGrid } from '../components/Skill/SkilGrid';
+
 
 export default function Skill({data}) {
 	return (
@@ -22,16 +24,7 @@ export default function Skill({data}) {
 					text2="フロントはJavasctiptをメインにReact(Next.js)を扱い、サーバーサイドはPython(Django)を仕様"
 					text3="他にもGitやLinux,Adobe,ネットワークといったプログラミング以外の学習も積極的にしています。"
 				/>
-				<section className={styles.gridStyle}>
-					{data.map((language) => (
-						<SkillLanguage
-							key={language.icon}
-							icon={[`${language.iconName}`, `${language.icon}`]}
-							color={language.color}
-							title={language.title}
-						/>
-					))}
-				</section>
+				<SkillGrid data={ data}/>
 			</main>
 			<Footer />
 		</div>
