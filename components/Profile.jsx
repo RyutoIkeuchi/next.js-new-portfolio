@@ -1,5 +1,5 @@
 import styles from './Profile.module.css'
-import { Images } from '../components/Images';
+import { Images } from './Images';
 
 export const Profile = () => {
   return (
