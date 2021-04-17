@@ -4,8 +4,9 @@ import { Footer } from '../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from '../components/SectionTitle';
 import { CareerContainer } from '../components/Career/CareerContainer';
+import { CareerPeace } from '../components/Career/CareerPeace';
 
-export default function Career() {
+export default function Career({data}) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -20,9 +21,18 @@ export default function Career() {
 					text2="将来の夢は多くの人に影響を与えるサービスをつくること"
 					text3="好きな漫画はキングダム・デスノート・テラフォーマーズ"
 				/>
-				<CareerContainer/>
+				<CareerContainer data={data} />
 			</main>
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const data = CareerPeace;
+	return {
+		props: {
+			data,
+		},
+	};
 }

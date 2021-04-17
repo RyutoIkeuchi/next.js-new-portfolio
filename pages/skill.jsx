@@ -3,7 +3,6 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from '../components/SectionTitle';
-import { SkillLanguage } from '../components/Skill/SkilLanguage';
 import { Languages } from '../components/Skill/Languages';
 import { SkillGrid } from '../components/Skill/SkilGrid';
 
