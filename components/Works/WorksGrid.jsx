@@ -1,11 +1,10 @@
 import styles from '../../styles/Home.module.css';
 import { WorksWrapper } from './WorksWrapper'
-import {WorksPeace} from './WorksPeace'
 
-export const WorksGrid = () => {
+export const WorksGrid = ({data}) => {
   return (
 		<section className={styles.gridStyle}>
-			{WorksPeace.map((peace) => (
+			{data.map((peace) => (
 				<WorksWrapper
 					key={peace.id}
 					url={peace.url}

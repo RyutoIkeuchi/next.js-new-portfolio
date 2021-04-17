@@ -4,8 +4,9 @@ import { Footer } from '../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from '../components/SectionTitle';
 import { WorksGrid } from '../components/Works/WorksGrid';
+import { WorksPeace } from '../components/Works/WorksPeace';
 
-export default function Works() {
+export default function Works({data}) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -22,9 +23,18 @@ export default function Works() {
 					text3="現在の目標はサーバーサイド言語を用いてアプリをつくることです。"
 				/>
 
-				<WorksGrid />
+				<WorksGrid data={ data}/>
 			</main>
 			<Footer />
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const data = WorksPeace;
+	return {
+		props: {
+			data,
+		},
+	};
 }
